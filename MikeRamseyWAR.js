@@ -44,7 +44,7 @@ class Deck {
     }
     
     buildDeck() {
-        const suits = ['hearts', 'clubs', 'diamonds', 'spades'];
+        const suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'];
 
         suits.forEach(suit => {
         for (let i = 2; i < 11; i++) {
@@ -61,7 +61,6 @@ class Deck {
         for (let i = 0; i < 26; i++) {
             this._player1Deck.push(this._unshuffledDeck.splice((Math.floor(Math.random()*this._unshuffledDeck.length)),1));
             this._player2Deck.push(this._unshuffledDeck.splice((Math.floor(Math.random()*this._unshuffledDeck.length)),1));
-
         }
     }
 }
